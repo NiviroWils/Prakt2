@@ -3,5 +3,8 @@
     "login":"testerAdmin",
     "none_existent_login":"Test",
     "existent_passwd":"Password1",
-    "none_existent_passwd":"Test"
+    "none_existent_passwd":"Test",
+    "test_login": "TestLogin",
+    "example_email": "example123@mail.com",
+    "test_passwd": "TestPassword1"
 }

@@ -4,18 +4,18 @@ describe('template spec', () => {
     })
     it('None-existent password test', () => {
         //Тест-кейс для проверки некорректного пароля
-        cy.fixture('cypressTests').then(data => {
-            cy.log('Переход на страницу авторизации')
-            cy.visit(data.main_url)
 
-            cy.log('Ввод существующего логина')
-            cy.get('.form-input--text')
-                .type(data.login)
+            cy.log('Ввод несуществующего логина')
+            cy.get(':nth-child(1) > :nth-child(1) > .form-control--medium > .form-input--text')
+                .type(data.test_login)
 
-            cy.log('Ввод несуществующего пароля')
-            cy.get('.form-input--password')
-                .type(data.none_existent_passwd)
-    
+            cy.log('Ввод email')
+            cy.get('.form-input--email')
+                .type(data.example_email)
+
+            cy.log('Ввод пароля')
+            cy.get(':nth-child(3) > .form-control--medium > .form-input--password')
+                .type(data.test_passwd)
 
             cy.log('Клик по кнопке "Войти"')
             cy.get(':nth-child(3) > .button')
@@ -58,6 +58,4 @@ describe('template spec', () => {
                 .should('exist')
 
         })
-    } )
-   
   })
