@@ -1,0 +1,7 @@
+{
+    "main_url":"https://dev.profteam.su/login",
+    "login":"testerAdmin",
+    "none_existent_login":"Test",
+    "existent_passwd":"Password1",
+    "none_existent_passwd":"Test"
+}
