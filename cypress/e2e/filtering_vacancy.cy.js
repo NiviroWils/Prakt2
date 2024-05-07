@@ -22,15 +22,17 @@ describe('template spec', () => {
 
             cy.wait(3000)
 
-           cy.log('Клие по кнопке "Вакансии"')
-           cy.get(':nth-child(1) > .header__nav > [href="/vacancies"]')
-               .click()
+            cy.log('Клик по кнопке "Вакансии"')
+            cy.get(':nth-child(1) > .header__nav > [href="/vacancies"]')
+                .click()
 
             cy.wait(3000)
 
-           cy.log('Клик по кнопке "Подробнее"')
-           cy.get(':nth-child(1) > .vacancy-item__info-wrapper > .vacancy-item__footer-wrapper > .vacancy-footer > .vacancy-footer__button-wrapper > .button')
-               .click()
+            cy.log('Клик по параметру "По диапозону"')
+            cy.get(':nth-child(1) > .radio-component__input')
+                .click()
+
+            cy.wait(3000)
         })
     } )
 })

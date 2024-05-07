@@ -22,15 +22,15 @@ describe('template spec', () => {
 
             cy.wait(3000)
 
-           cy.log('Клие по кнопке "Вакансии"')
-           cy.get(':nth-child(1) > .header__nav > [href="/vacancies"]')
-               .click()
+            cy.log('Клик по кнопке "Потребности"')
+            cy.get(':nth-child(1) > .header__nav > [href="/needs"]')
+                .click()
 
             cy.wait(3000)
 
-           cy.log('Клик по кнопке "Подробнее"')
-           cy.get(':nth-child(1) > .vacancy-item__info-wrapper > .vacancy-item__footer-wrapper > .vacancy-footer > .vacancy-footer__button-wrapper > .button')
-               .click()
+            cy.log('Клик по кнопке "Подробнее"')
+            cy.get(':nth-child(1) > .need-item__info-wrapper > .need-item__footer-wrapper > .need-footer > .need-footer__button-wrapper > .button')
+                .click()
         })
     } )
 })
