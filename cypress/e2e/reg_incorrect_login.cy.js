@@ -7,7 +7,7 @@ describe('template spec', () => {
             cy.log('Положительный тест-кейс регистрации')
             cy.visit('https://dev.profteam.su/registration')
             //Тест-кейс для проверки регистрации (положительный)
-            cy.log('Ввод некорректного логина')
+            cy.log('Ввод Невалидного логина')
             cy.get(':nth-child(1) > :nth-child(1) > .form-control--medium > .form-input--text')
                 .type(data.incorrect_login)
 
@@ -19,7 +19,7 @@ describe('template spec', () => {
             cy.get(':nth-child(3) > .form-control--medium > .form-input--password')
                 .type(data.test_passwd)
 
-            cy.log('Ввод повторный ввод пароля')
+            cy.log('Повторный ввод пароля')
             cy.get(':nth-child(4) > .form-control--medium > .form-input--password')
                 .type(data.test_passwd)
 

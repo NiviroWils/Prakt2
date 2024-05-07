@@ -11,17 +11,17 @@ describe('template spec', () => {
             cy.get(':nth-child(1) > :nth-child(1) > .form-control--medium > .form-input--text')
                 .type(data.test_login)
 
-            cy.log('Ввод невалидного email')
+            cy.log('Ввод email')
             cy.get('.form-input--email')
-                .type(data.incorrect_email)
+                .type(data.example_email)
 
             cy.log('Ввод пароля')
             cy.get(':nth-child(3) > .form-control--medium > .form-input--password')
                 .type(data.test_passwd)
 
-            cy.log('Повторный ввод пароля')
+            cy.log('Некорректный повторный ввод пароля')
             cy.get(':nth-child(4) > .form-control--medium > .form-input--password')
-                .type(data.test_passwd)
+                .type(data.incorrect_passwd2)
 
 
 
