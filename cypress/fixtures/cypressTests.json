@@ -2,6 +2,7 @@
     "main_url":"https://dev.profteam.su/login",
     "login":"testerAdmin",
     "login_student": "testerStudent",
+    "login_employer": "testerEmployer",
     "none_existent_login":"Test",
     "existent_passwd":"Password1",
     "none_existent_passwd":"Test",
@@ -19,6 +20,10 @@
     "incorrect_patronymic": "Ivanovich",
     "incorrect_login": "Логин228",
     "incorrect_passwd2": "TestPasswd",
-    "incorrect_passwd": "Пароль6"
+    "incorrect_passwd": "Пароль6",
+    "vacancy_name": "Главный директор по воссозданию кофепауз",
+    "vacancy_requirements": "Исследование новых методов оценки качества печенья и кофе",
+    "vacancy_duties": "Разработка алгоритмов для оптимального выбора музыки во время перерывов, печенья и кофе",
+    "vacancy_salary": "100000"
 
 }
