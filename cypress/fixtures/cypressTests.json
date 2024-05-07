@@ -4,10 +4,17 @@
     "none_existent_login":"Test",
     "existent_passwd":"Password1",
     "none_existent_passwd":"Test",
-    "test_login": "TestLoginpyat",
-    "example_email": "example123345@mail.com",
+    "test_login": "TestLoginshest",
+    "example_email": "example1233456@mail.com",
     "test_passwd": "TestPassword3",
     "test_surname": "Иванов",
     "test_name": "Иван",
-    "test_patronymic": "Иванович"
+    "test_patronymic": "Иванович",
+    "incorrect_email":"email123",
+    "incorrect_surname": "Ivanov",
+    "incorrect_name": "Ivan",
+    "incorrect_patronymic": "Ivanovich",
+    "incorrect_login": "Логин228",
+    "incorrect_passwd2": "TestPasswd"
+
 }

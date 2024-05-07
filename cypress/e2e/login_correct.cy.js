@@ -19,7 +19,7 @@ describe('template spec', () => {
             cy.log('Клик по кнопке "Войти"')
             cy.get(':nth-child(3) > .button')
                 .click()
-            cy.wait(2000)
+            cy.wait(5000)
 
             cy.log('Клик по кнопке "Выйти"')
             cy.get('[data-v-7ff322b7=""][data-v-f5840952=""] > .button')
